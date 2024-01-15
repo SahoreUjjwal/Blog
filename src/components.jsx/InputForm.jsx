@@ -10,9 +10,9 @@ export function InputForm(props){
                                                                                         })}}/>
                 <label htmlFor="Content">Content</label>
                 <input type="text" required value={formData.content} onChange={(e)=>{setFormData({
-                                                                                                    title:formData.title,
-                                                                                                    content:e.target.value
-                                                                                                })}}/>
+                                                                                    title:formData.title,
+                                                                                    content:e.target.value
+                                                                                })}}/>
                 <input type="submit" />
             </form>
         </>
