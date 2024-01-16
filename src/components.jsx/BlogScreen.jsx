@@ -31,10 +31,13 @@ export function BlogScreen(){
 
 
     return( <> 
-            <div>
+            <div className="pb-2 flex w-full flex-row content-center justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ... rounded-lg">
                 <InputForm titleRef={titleRef} formData={formData} setFormData={setFormData} handleSubmit={handleSubmit}/>
             </div>
-            <AllBlogs blogs={blogs} deletePost={deletePost}/>
+            <div className ="my-2">
+                <AllBlogs blogs={blogs} deletePost={deletePost}/>
+            </div>
+            
         </>
     )
 }
