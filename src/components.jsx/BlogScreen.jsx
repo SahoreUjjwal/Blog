@@ -2,7 +2,7 @@ import { InputForm } from "./InputForm"
 import { AllBlogs } from "./AllBlogs"
 import { useReducer, useRef,useState } from "react";
 import {blogReducer} from "../assets/blogReducer";
-
+import { db } from "../assets/firebase_init";
 export function BlogScreen(){
 
     const [formData,setFormData] = useState({title:"",content:""});
